@@ -110,7 +110,7 @@ export default function ProfileComponent(props) {
         <div className="container mx-auto">
             <h3>My Profile</h3>
             <hr />
-            <div class="grid lg:grid-col-3" >
+            <div className="grid lg:grid-col-3" >
                 <div className="row ">
                     
                   <div className="col-md-auto ">
@@ -145,7 +145,7 @@ export default function ProfileComponent(props) {
                                 })
                             }
                         </ul> */}
-                        <div class="" >
+                        <div className="" >
                             <Router>
                                 <Routes>
                                 <Route path="/" element={<Badges/>}/>

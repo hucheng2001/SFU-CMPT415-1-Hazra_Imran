@@ -261,7 +261,7 @@ export default function EditorComponent(props) {
             >
               <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                  <h2 class="mt-3">🎉 Congratulations! 🎉</h2>
+                  <h2 className="mt-3">🎉 Congratulations! 🎉</h2>
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body>
@@ -323,7 +323,7 @@ export default function EditorComponent(props) {
       }
     
     return (
-            <div class="codingchall">
+            <div className="codingchall">
                 <h1>Coding Challenge</h1>
                 <div className="editor-output">
                     <div className="output">
@@ -355,7 +355,7 @@ export default function EditorComponent(props) {
                     <div className = "pointdescription"> You have {score} <FontAwesomeIcon icon="fa-solid fa-coins" /></div>
                     <div className = "pointdescription"> 50 <FontAwesomeIcon icon="fa-solid fa-coins" /> are need to use a hint.</div>
                 </div>
-                <div class="btn-group btn-group-editor-run" role="group">
+                <div className="btn-group btn-group-editor-run" role="group">
                     <button type="button" className={"btn btn-primary" + (runEnabled ? "" : " disabled" )} onClick={e => runCode(e)}>Run Code</button>
                     <HintModal
                         show={modalHintShow}

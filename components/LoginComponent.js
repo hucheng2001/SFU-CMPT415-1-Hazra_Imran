@@ -55,7 +55,7 @@ function LoginComponent(props) {
             return false
         }
 
-        if (!email.endsWith('@sfu.ca')) {
+        if (!email.endsWith('@xxxxxx.com')) {
             return false
         }
 
@@ -76,7 +76,7 @@ function LoginComponent(props) {
             return false
         }
 
-        if (!email.endsWith('@sfu.ca')) {
+        if (!email.endsWith('@xxxxxx.com')) {
             return false
         }
 
@@ -203,7 +203,7 @@ function LoginComponent(props) {
                 //     console.log('email sent');
                 // }).catch('email not sent');
         } else {
-            alert('Please ensure that your email is @sfu.ca and that your password is at least 6 characters long.')
+            alert('Please ensure that your email is @xxxxxx.com and that your password is at least 6 characters long.')
         }
     }
     const loginSuccess = (email, uid) => {
@@ -240,7 +240,7 @@ function LoginComponent(props) {
                 alert(error.message)
             })
         } else {
-            alert('Please ensure that your email is @sfu.ca.')
+            alert('Please ensure that your email is @xxxxxx.com.')
         }
     }
 
@@ -318,9 +318,9 @@ function LoginComponent(props) {
                         <br></br>
                         If you don't have, please feel free to choose "No".
                     </p>
-                    <label class="switch">
+                    <label className="switch">
                         <input type="checkbox"/>
-                        <span class="slider" onClick = {question_shown}></span>
+                        <span className="slider" onClick = {question_shown}></span>
                     </label>
                     {/* <br></br> */}
                     {/* <span class = "level_selection">Do you have experience in Programming?</span> */}
@@ -329,7 +329,7 @@ function LoginComponent(props) {
                     <br></br>
                     <br></br>
                     {/* <button className="btn btn-lg btn-primary btn-block" type="submit" onClick={handleSignUp}>Sign up</button> */}
-                    <button class="cta" id = "submit_button" type="submit" onClick={handleSignUp}>
+                    <button className="cta" id = "submit_button" type="submit" onClick={handleSignUp}>
                         <span>Sign up</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                             <path d="M1,5 L11,5"></path>
@@ -339,8 +339,8 @@ function LoginComponent(props) {
                     {/* this is the tooltip part, the point is using span thing. I changed the given code, so you can change is back to the given code. */}
                     {/* <p>
                         What is your expertise level in<br></br>
-                        <span class="tooltip">
-                            conditional statements?<span class="tooltip-text">Example</span>
+                        <span className="tooltip">
+                            conditional statements?<span className="tooltip-text">Example</span>
                         </span>
                     </p> */}
                     {/* <input type="range" className="form-range" id="expertiseRange" min = "1" max = "5" step="1" defaultValue = "3" required = "True" list = "tickmarks" ref={expertiseLevel}/> */}
@@ -353,9 +353,9 @@ function LoginComponent(props) {
                 <form className = "white_box" id = "demo"></form>
                 <form className = "title-question">
                     <br></br>
-                    <span class="title-question">Let's check your expertise level in python.</span>
+                    <span className="title-question">Let's check your expertise level in python.</span>
                     {/* <br></br> */}
-                    {/* <div class="question" id = "question-1">
+                    {/* <div className="question" id = "question-1">
                     <div class ="question-content">
                         <p>
                             <span class = "question_num">1. </span>
@@ -363,24 +363,24 @@ function LoginComponent(props) {
                         </p>
                         <div class = "code-toolbox">
                             <pre id="syntax" class = "language">
-                                <code class="language-python">
+                                <code className="language-python">
                                     salary 
                                     <span class = "token operator">=</span>
                                     <span class = "token number">10000</span>
                                     <br></br>
                                     <span class = "token keyword">print</span>
                                     <span class = "token punctuation">(</span>
-                                    <span class="token string">"Salary:"</span>
-                                    <span class="token punctuation">, </span>
+                                    <span className="token string">"Salary:"</span>
+                                    <span className="token punctuation">, </span>
                                     salary
-                                    <span class="token punctuation">)</span>
+                                    <span className="token punctuation">)</span>
                                 </code>
                             </pre>
                         </div>
                         <input type="answer1" id="inputAnswer1" className="answer-box" placeholder="Answer" required="True" ref={answer1} />
                     </div>
                     </div> */}
-                    <div class="question" id = "question-2">
+                    <div className="question" id = "question-2">
                     <div class ="question-content">
                         <p>
                             <span class = "question_num">1. </span>
@@ -388,7 +388,7 @@ function LoginComponent(props) {
                         </p>
                         <div class = "code-toolbox">
                             <pre id="syntax" class = "language">
-                                <code class="language-python">
+                                <code className="language-python">
                                     myNumber 
                                     <span class = "token operator"> = </span>
                                     <span class = "token number">1</span>
@@ -401,16 +401,16 @@ function LoginComponent(props) {
                                     0
                                     <span class = "token punctuation">:</span>
                                     <br></br>
-                                    <span class="token keyword">    print</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">    print</span>
+                                    <span className="token punctuation">(</span>
                                     "correct"
                                     <span class = "token punctuation">)</span>
                                     <br></br>
                                     <span class = "token keyword">else</span>
                                     <span class = "token punctuation">:</span>
                                     <br></br>
-                                    <span class="token keyword">    print</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">    print</span>
+                                    <span className="token punctuation">(</span>
                                     myNumber
                                     <span class = "token punctuation">)</span>
                                 </code>
@@ -419,7 +419,7 @@ function LoginComponent(props) {
                         <input type="answer1" id="inputAnswer1" className="answer-box" placeholder="Answer" required="True" ref={answer2} />
                     </div>
                     </div>
-                    <div class="question" id = "question-3">
+                    <div className="question" id = "question-3">
                     <div class ="question-content">
                         <p>
                             <span class = "question_num">2. </span>
@@ -427,36 +427,36 @@ function LoginComponent(props) {
                         </p>
                         <div class = "code-toolbox">
                             <pre id="syntax" class = "language">
-                                <code class="language-python">
-                                    <span class="token keyword">def </span>
-                                    <span class="token function">calculate</span>
-                                    <span class="token punctuation">(</span>
+                                <code className="language-python">
+                                    <span className="token keyword">def </span>
+                                    <span className="token function">calculate</span>
+                                    <span className="token punctuation">(</span>
                                     num1
-                                    <span class="token punctuation">, </span>
+                                    <span className="token punctuation">, </span>
                                     num2
                                     <span class = "token operator"> = </span>
-                                    <span class="token number">1</span>
-                                    <span class="token punctuation">):</span>
+                                    <span className="token number">1</span>
+                                    <span className="token punctuation">):</span>
                                     <br></br>
-                                    <span class="to">    numList</span>
+                                    <span className="to">    numList</span>
                                     <span class = "token operator"> = </span>
                                     ""
                                     <br></br>
-                                    <span class="token keyword">    for </span>
+                                    <span className="token keyword">    for </span>
                                     i
-                                    <span class="token keyword"> in range</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword"> in range</span>
+                                    <span className="token punctuation">(</span>
                                     0, num1, num2
-                                    <span class="token punctuation">):</span>
+                                    <span className="token punctuation">):</span>
                                     <br></br>
-                                    <span class="to">        numList += str(i)</span>
+                                    <span className="to">        numList += str(i)</span>
                                     <br></br>
-                                    <span class="token keyword">    return</span>
-                                    <span class="token function"> len</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">    return</span>
+                                    <span className="token function"> len</span>
+                                    <span className="token punctuation">(</span>
                                     numList
-                                    <span class="token punctuation">)</span>
-                                    {/* <span class="tn">    res</span>
+                                    <span className="token punctuation">)</span>
+                                    {/* <span className="tn">    res</span>
                                     <span class = "token operator"> = </span>
                                     num1
                                     <span class = "token operator"> * </span>
@@ -465,16 +465,16 @@ function LoginComponent(props) {
                                     <br></br>
                                     result
                                     <span class = "token operator"> = </span>
-                                    <span class="token function">calculate</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token function">calculate</span>
+                                    <span className="token punctuation">(</span>
                                     10
-                                    <span class="token punctuation">,</span>
+                                    <span className="token punctuation">,</span>
                                     2
                                     {/* 0, 0.5, 1.0, 1.5, 2.0, 2.5 */}
-                                    <span class="token punctuation">)</span>
+                                    <span className="token punctuation">)</span>
                                     <br></br>
-                                    <span class="token keyword">print</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">print</span>
+                                    <span className="token punctuation">(</span>
                                     result
                                     <span class = "token punctuation">)</span>
                                 </code>
@@ -483,7 +483,7 @@ function LoginComponent(props) {
                         <input type="answer1" id="inputAnswer1" className="answer-box" placeholder="Answer" required="True" ref={answer3} />
                     </div>
                     </div>
-                    <div class="question" id = "question-3">
+                    <div className="question" id = "question-3">
                     <div class ="question-content">
                         <p>
                             <span class = "question_num">3. </span>
@@ -491,47 +491,47 @@ function LoginComponent(props) {
                         </p>
                         <div class = "code-toolbox">
                             <pre id="syntax" class = "language">
-                                <code class="language-python">
-                                    <span class="token keyword">def </span>
-                                    <span class="token function">calculate</span>
-                                    <span class="token punctuation">(</span>
+                                <code className="language-python">
+                                    <span className="token keyword">def </span>
+                                    <span className="token function">calculate</span>
+                                    <span className="token punctuation">(</span>
                                     num1
-                                    <span class="token punctuation">, </span>
+                                    <span className="token punctuation">, </span>
                                     num2
                                     <span class = "token operator"> = </span>
-                                    <span class="token number">1</span>
-                                    <span class="token punctuation">):</span>
+                                    <span className="token number">1</span>
+                                    <span className="token punctuation">):</span>
                                     <br></br>
-                                    <span class="to">     numList</span>
+                                    <span className="to">     numList</span>
                                     <span class = "token operator"> = </span>
                                     []
                                     <br></br>
-                                    <span class="to">     result</span>
+                                    <span className="to">     result</span>
                                     <span class = "token operator"> = </span>
                                     0
                                     <br></br>
-                                    <span class="token keyword">    for </span>
+                                    <span className="token keyword">    for </span>
                                     i
-                                    <span class="token keyword"> in range</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword"> in range</span>
+                                    <span className="token punctuation">(</span>
                                     0, num1, num2
-                                    <span class="token punctuation">):</span>
+                                    <span className="token punctuation">):</span>
                                     <br></br>
-                                    <span class="to">        numList.append(i)</span>
+                                    <span className="to">        numList.append(i)</span>
                                     <br></br>
-                                    <span class="token keyword">    for </span>
+                                    <span className="token keyword">    for </span>
                                     num
-                                    <span class="token keyword"> in </span>
+                                    <span className="token keyword"> in </span>
                                     numList
-                                    <span class="token punctuation">:</span>
+                                    <span className="token punctuation">:</span>
                                     <br></br>
-                                    <span class="to">        result</span>
+                                    <span className="to">        result</span>
                                     <span class = "token operator"> += </span>
-                                    <span class="to">num</span>
+                                    <span className="to">num</span>
                                     <br></br>
-                                    <span class="token keyword">    return </span>
+                                    <span className="token keyword">    return </span>
                                     result
-                                    {/* <span class="tn">    res</span>
+                                    {/* <span className="tn">    res</span>
                                     <span class = "token operator"> = </span>
                                     num1
                                     <span class = "token operator"> * </span>
@@ -540,16 +540,16 @@ function LoginComponent(props) {
                                     <br></br>
                                     result
                                     <span class = "token operator"> = </span>
-                                    <span class="token function">calculate</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token function">calculate</span>
+                                    <span className="token punctuation">(</span>
                                     10
-                                    <span class="token punctuation">,</span>
+                                    <span className="token punctuation">,</span>
                                     3
                                     {/* 0, 0.5, 1.0, 1.5, 2.0, 2.5 */}
-                                    <span class="token punctuation">)</span>
+                                    <span className="token punctuation">)</span>
                                     <br></br>
-                                    <span class="token keyword">print</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">print</span>
+                                    <span className="token punctuation">(</span>
                                     result
                                     <span class = "token punctuation">)</span>
                                 </code>
@@ -558,7 +558,7 @@ function LoginComponent(props) {
                         <input type="answer1" id="inputAnswer1" className="answer-box" placeholder="Answer" required="True" ref={answer4} />
                     </div>
                     </div>
-                    <button class="cta2" id = "submit_button2" type="submit" onClick={handleSignUp}>
+                    <button className="cta2" id = "submit_button2" type="submit" onClick={handleSignUp}>
                         <span>Sign up</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                             <path d="M1,5 L11,5"></path>

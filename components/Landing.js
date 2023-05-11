@@ -120,7 +120,7 @@ const Landing = () => {
   <CodeProblem {...Q3}/>
   <CodeProblem {...Q4}/>
   <CodeProblem {...Q5}/>
-  <div class="btn-group btn-group-editor-run" role="group">
+  <div className="btn-group btn-group-editor-run" role="group">
         <button type="button" className="btn btn-light" href="#" role="button" onClick={closeCodingChallenge}>Close Coding Challenge</button>
   </div> 
     </>

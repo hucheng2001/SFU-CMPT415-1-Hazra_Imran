@@ -195,7 +195,7 @@ export default function EasyEditorComponent(props) {
                         </>
                     })}
                 </ol>
-                <div class="btn-group" role="group">
+                <div className="btn-group" role="group">
                     {checkAnswersBtn()}
                     <button type="button" className="btn btn-light" href="#" role="button" onClick={closeCodingChallenge}>Close Coding Challenge</button>
                 </div>

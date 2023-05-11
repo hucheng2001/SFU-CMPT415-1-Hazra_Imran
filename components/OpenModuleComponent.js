@@ -47,7 +47,7 @@ function CompletedModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            <h2 class="mt-3">🎉 Congratulations! 🎉</h2>
+            <h2 className="mt-3">🎉 Congratulations! 🎉</h2>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -426,9 +426,9 @@ function OpenModuleComponent(props) {
     }
 
     return (
-        <div class="d-flex flex-row flex-grow-1 ms-5">
+        <div className="d-flex flex-row flex-grow-1 ms-5">
             <SideBar sideOut={sideOut} moduleName={moduleName.replaceAll('-', '_')}/>
-            <div class="bg-primary text-dark bg-opacity-25 rounded ps-2 pt-4 me-5 mb-4">
+            <div className="bg-primary text-dark bg-opacity-25 rounded ps-2 pt-4 me-5 mb-4">
                 <div id = "quiz_list" class = "quiz_list3">
                 </div> 
             </div>
@@ -477,7 +477,7 @@ function OpenModuleComponent(props) {
                                 </div>
                                 <div className="col">
                                     <div onload = {show_point()}>
-                                        <div class="d-flex justify-content-start">
+                                        <div className="d-flex justify-content-start">
                                             <div id = "p" className = "point me-2"></div>
                                             <FontAwesomeIcon icon="fa-solid fa-coins" />
                                         </div>
